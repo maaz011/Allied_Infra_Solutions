@@ -67,7 +67,7 @@ const StatsCounter = () => {
     <section 
       className="relative py-20 md:py-24 bg-cover bg-center text-white"
       style={{ 
-        backgroundImage: "url('https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+        backgroundImage: `url('/32.jpg')`,
       }}
     >
       <div className="absolute inset-0 bg-secondary bg-opacity-90"></div>
