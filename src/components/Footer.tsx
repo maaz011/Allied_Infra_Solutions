@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { HardHat, Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import logo from "@/assets/logo.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-            <img src="/logo.png" alt="Logo" width={50} height={50} className="mr-2" style={{ marginRight: '2px' }} />
+            <img src={logo} alt="Logo" width={50} height={50} className="mr-2" style={{ marginRight: '2px' }} />
               <span className="font-heading font-bold text-xl">Allied Infra Solutions</span>
             </div>
             <p className="text-mediumgray mb-4">
@@ -99,7 +100,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="text-center text-mediumgray">
-          <p>&copy; {currentYear} InduBuild. All rights reserved.</p>
+          <p>&copy; {currentYear} Allied Infra Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

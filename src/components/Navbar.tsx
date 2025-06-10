@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from "@/assets/logo.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
       {/* Logo & Title */}
       <NavLink to="/" className="flex items-center">
         <img
-          src="Public/logo.png"
+          src={logo}
           alt="Logo"
           className="h-24 w-24 object-contain mt-5"
         />
