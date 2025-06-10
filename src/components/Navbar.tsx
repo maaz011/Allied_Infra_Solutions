@@ -25,15 +25,15 @@ const Navbar = () => {
 
   return (
     <header
-    className={`fixed w-full z-50 transition-all duration-300 border-b ${
-      isScrolled ? 'bg-white shadow-sm py-2 border-gray-200' : 'bg-transparent py-4 border-transparent'
+    className={`fixed w-full z-50 transition-all duration-300 border-b p-0 ${
+      isScrolled ? 'bg-white shadow-sm py-2 border-gray-200' : 'bg-transparent -mt-2 border-transparent'
     }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav className="flex justify-between items-center">
       {/* Logo & Title */}
       <NavLink to="/" className="flex items-center">
-        <img
+        <img 
           src={logo}
           alt="Logo"
           className="h-24 w-24 object-contain mt-5"
